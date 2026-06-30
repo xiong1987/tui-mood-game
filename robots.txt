@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tui.example.com/sitemap.xml

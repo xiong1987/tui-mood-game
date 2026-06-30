@@ -1,0 +1,42 @@
+name: Deploy to Multiple Platforms
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        platform: [vercel, netlify, github-pages]
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Deploy to ${{ matrix.platform }}
+        run: |
+          echo "Deploying to ${{ matrix.platform }}..."
+          # 各平台部署逻辑
+          
+      # Vercel 部署（需要配置 VERCEL_TOKEN）
+      - name: Deploy to Vercel
+        if: matrix.platform == 'vercel'
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.PROJECT_ID }}
+          vercel-args: '--prod'
+          
+      # Netlify 部署（需要配置 NETLIFY_AUTH_TOKEN）
+      - name: Deploy to Netlify
+        if: matrix.platform == 'netlify'
+        uses: nwtgck/actions-netlify@v2
+        with:
+          publish-dir: '.'
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

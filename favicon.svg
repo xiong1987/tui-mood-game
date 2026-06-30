@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 背景圆 -->
+  <circle cx="32" cy="32" r="30" fill="#FAFAF7"/>
+  
+  <!-- 蛇身 - 贪吃蛇造型，柔和绿色 -->
+  <g fill="none" stroke="#8BA888" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 蛇身曲线 -->
+    <path d="M16 40 Q16 28 28 28 Q40 28 40 40 Q40 52 52 52" />
+  </g>
+  
+  <!-- 蛇头 -->
+  <circle cx="52" cy="52" r="5" fill="#8BA888"/>
+  
+  <!-- 眼睛 -->
+  <circle cx="54" cy="50" r="1.5" fill="#FAFAF7"/>
+  
+  <!-- 小叶子/嫩芽（治愈感 -->
+  <g fill="#A8C4A0">
+    <ellipse cx="42" cy="22" rx="4" ry="6" transform="rotate(-30 42 22)"/>
+    <ellipse cx="48" cy="25" rx="3" ry="5" transform="rotate(15 48 25)"/>
+  </g>
+  
+  <!-- 茎 -->
+  <path d="M45 28 L45 35" stroke="#8BA888" stroke-width="2" stroke-linecap="round"/>
+</svg>

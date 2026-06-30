@@ -1,0 +1,30 @@
+stages:
+  - deploy
+
+deploy_vercel:
+  stage: deploy
+  script:
+    - npm install -g vercel
+    - vercel deploy --prod --token=$VERCEL_TOKEN
+  only:
+    - main
+
+deploy_netlify:
+  stage: deploy
+  script:
+    - npm install -g netlify-cli
+    - netlify deploy --prod --auth=$NETLIFY_TOKEN --site=$NETLIFY_SITE_ID
+  only:
+    - main
+
+pages:
+  stage: deploy
+  script:
+    - echo "Deploying to GitLab Pages..."
+    - mkdir -p public
+    - cp -r ./* public/ 2>/dev/null || true
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

@@ -1,0 +1,29 @@
+[build]
+  publish = "."
+  command = "echo 'Static site deployment'"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# SPA 单页应用重定向（取消注释启用）
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
