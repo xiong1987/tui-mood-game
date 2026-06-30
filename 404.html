@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蜕 - 情绪调节小游戏</title>
+  <base href="/tui-mood-game/">
+  <script>
+    // SPA 路由回退：保存当前路径并重定向到首页
+    var path = window.location.pathname.replace(/^\/tui-mood-game/, '') + window.location.search + window.location.hash;
+    if (path && path !== '/') {
+      sessionStorage.setItem('spa-redirect', path);
+    }
+    window.location.replace('/tui-mood-game/');
+  </script>
+</head>
+<body>
+  <p>正在跳转...</p>
+</body>
+</html>

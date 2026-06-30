@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tui.example.com/</loc>
+    <loc>https://xiong1987.github.io/tui-mood-game/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://tui.example.com/?lang=zh" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tui.example.com/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tui.example.com/?lang=ja" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://tui.example.com/?lang=ko" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://tui.example.com/?lang=th" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://tui.example.com/?lang=id" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tui.example.com/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://xiong1987.github.io/tui-mood-game/?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://xiong1987.github.io/tui-mood-game/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xiong1987.github.io/tui-mood-game/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xiong1987.github.io/tui-mood-game/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://xiong1987.github.io/tui-mood-game/?lang=th" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://xiong1987.github.io/tui-mood-game/?lang=id" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xiong1987.github.io/tui-mood-game/" />
   </url>
 </urlset>

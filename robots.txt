@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tui.example.com/sitemap.xml
+Sitemap: https://xiong1987.github.io/tui-mood-game/sitemap.xml
